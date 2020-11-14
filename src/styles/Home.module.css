@@ -1,0 +1,44 @@
+.home{
+    height: 100vh;
+}
+.stories{
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    position: relative;
+    padding:0 25px;
+    display: flex;
+    align-items: center;
+}
+.prevStory{
+    left: 0;
+}
+.nextStory{
+    right: 0;
+}
+
+.prevStory,
+.nextStory{
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    background-color: white;
+    border: 1.5px solid black;
+    font-size:18px;
+}
+
+.stories > div {
+    width: 100%;
+    overflow: visible;
+}
+.stories > div > div{
+    display: flex;
+}
+.stories a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.main{}

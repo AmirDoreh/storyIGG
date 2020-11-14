@@ -1,0 +1,113 @@
+.stories {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    z-index: 1;
+    overflow: hidden;
+}
+.storyMedia{
+    position: absolute;
+    width: 100%;
+    left: 0;
+     vertical-align: baseline;
+    z-index: -1;
+}
+.header {
+    width: 100%;
+}
+
+.storiesLength {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storiesLength>div {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storiesLength>div>div {
+    width:95%;
+    height: 3px;
+    background-color: #bbb5;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.storiesLength>div>div>div {
+    height: 100%;
+    position: absolute;
+    background-color: #fffa;
+}
+
+.profile {
+    padding:0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile p {
+    margin: 0;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.message {
+    margin-bottom: 15px;
+    width: 95%;
+    align-self: center;
+    display: flex;
+    height: 40px;
+    z-index: 10;
+
+}
+.message > div{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0 20px;
+}
+.message > div > input{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    font-size: 17px;
+    background-color: transparent;
+    color: #eee;
+    border: none;
+}
+.message > div > input::placeholder{
+    color:#555;
+}
+.message button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 10px;
+    font-size: 18px;
+    background-color:#eee5;
+    color: white;
+}
